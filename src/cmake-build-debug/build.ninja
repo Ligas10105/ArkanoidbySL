@@ -63,6 +63,13 @@ build CMakeFiles/ArkanoidbySL.dir/Ball.cpp.obj: CXX_COMPILER__ArkanoidbySL_Debug
   OBJECT_DIR = CMakeFiles\ArkanoidbySL.dir
   OBJECT_FILE_DIR = CMakeFiles\ArkanoidbySL.dir
 
+build CMakeFiles/ArkanoidbySL.dir/Palette.cpp.obj: CXX_COMPILER__ArkanoidbySL_Debug C$:/Users/ligas/OneDrive/Pulpit/Github/ArkanoidbySL/src/Palette.cpp || cmake_object_order_depends_target_ArkanoidbySL
+  DEP_FILE = CMakeFiles\ArkanoidbySL.dir\Palette.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ligas/OneDrive/Pulpit/Github/ArkanoidbySL/src/cmake-build-debug/_deps/sfml-src/include
+  OBJECT_DIR = CMakeFiles\ArkanoidbySL.dir
+  OBJECT_FILE_DIR = CMakeFiles\ArkanoidbySL.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ArkanoidbySL
@@ -71,7 +78,7 @@ build CMakeFiles/ArkanoidbySL.dir/Ball.cpp.obj: CXX_COMPILER__ArkanoidbySL_Debug
 #############################################
 # Link the executable ArkanoidbySL.exe
 
-build ArkanoidbySL.exe: CXX_EXECUTABLE_LINKER__ArkanoidbySL_Debug CMakeFiles/ArkanoidbySL.dir/main.cpp.obj CMakeFiles/ArkanoidbySL.dir/Ball.cpp.obj | _deps/sfml-build/lib/libsfml-graphics-d.a _deps/sfml-build/lib/libsfml-window-d.a _deps/sfml-build/lib/libsfml-system-d.a || _deps/sfml-build/lib/sfml-graphics-d-2.dll _deps/sfml-build/lib/sfml-system-d-2.dll _deps/sfml-build/lib/sfml-window-d-2.dll
+build ArkanoidbySL.exe: CXX_EXECUTABLE_LINKER__ArkanoidbySL_Debug CMakeFiles/ArkanoidbySL.dir/main.cpp.obj CMakeFiles/ArkanoidbySL.dir/Ball.cpp.obj CMakeFiles/ArkanoidbySL.dir/Palette.cpp.obj | _deps/sfml-build/lib/libsfml-graphics-d.a _deps/sfml-build/lib/libsfml-window-d.a _deps/sfml-build/lib/libsfml-system-d.a || _deps/sfml-build/lib/sfml-graphics-d-2.dll _deps/sfml-build/lib/sfml-system-d-2.dll _deps/sfml-build/lib/sfml-window-d-2.dll
   FLAGS = -g
   LINK_LIBRARIES = _deps/sfml-build/lib/libsfml-graphics-d.a  _deps/sfml-build/lib/libsfml-window-d.a  _deps/sfml-build/lib/libsfml-system-d.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ArkanoidbySL.dir
