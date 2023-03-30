@@ -3,4 +3,4 @@
 2) Pierwsze utworzenie okna.
 3) Utworzenie białej kulki.
 4) Nadanie ruchu kulce oraz dodanie kolizji z krawędziami ekranu.
-   ![Alt Text](/Assets/Collisions.Gif)
+   ![Alt Text](/Assets/Collisions.gif)
