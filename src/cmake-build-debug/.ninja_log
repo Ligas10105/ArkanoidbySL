@@ -83,3 +83,13 @@
 38527	40445	7018825686717591	_deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplFBO.cpp.obj	b7cd586f208f824c
 40445	41878	7018825700963514	_deps/sfml-build/lib/sfml-graphics-d-2.dll	a4333eab1d3ee5eb
 40445	41878	7018825700963514	_deps/sfml-build/lib/libsfml-graphics-d.a	a4333eab1d3ee5eb
+55	1189	7018859091170595	CMakeFiles/ArkanoidbySL.dir/Palette.cpp.obj	6e1ed83660a76a55
+6	1227	7018859091558388	CMakeFiles/ArkanoidbySL.dir/main.cpp.obj	f3b5a1352fbea7f8
+1228	2418	7018859100200045	ArkanoidbySL.exe	c92695e04f1e210d
+6	1141	7018859597415261	CMakeFiles/ArkanoidbySL.dir/main.cpp.obj	f3b5a1352fbea7f8
+1142	2289	7018859605804960	ArkanoidbySL.exe	c92695e04f1e210d
+6	1127	7018860122207305	CMakeFiles/ArkanoidbySL.dir/main.cpp.obj	f3b5a1352fbea7f8
+1127	2218	7018860130180474	ArkanoidbySL.exe	c92695e04f1e210d
+54	1209	7018869790137892	CMakeFiles/ArkanoidbySL.dir/Palette.cpp.obj	6e1ed83660a76a55
+6	1248	7018869790531338	CMakeFiles/ArkanoidbySL.dir/main.cpp.obj	f3b5a1352fbea7f8
+1249	3577	7018869810596269	ArkanoidbySL.exe	c92695e04f1e210d

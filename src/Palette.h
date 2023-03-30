@@ -15,6 +15,10 @@ public:
     ~Palette() = default;
 
     void update();
+    float right();
+    float left();
+    float top();
+    float bottom();
 
 private:
     void draw(RenderTarget& target, RenderStates state) const override;

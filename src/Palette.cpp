@@ -21,4 +21,30 @@ void Palette :: draw (RenderTarget& target, RenderStates state) const{
 
 void Palette :: update(){
     this -> shape.move(velocity);
+    if (this -> left() < 0)
+    {
+        velocity.x = paletteVelocity;
+    }
+    else if (this -> right() > 800){
+        velocity.x = -paletteVelocity;
+
+    }
+
+
+}
+
+float Palette :: left(){
+    return this -> shape.getPosition().x - shape.getSize().x / 2.f;
+}
+
+float Palette :: right(){
+    return this -> shape.getPosition().x + shape.getSize().x / 2.f;
+}
+
+float Palette :: top(){
+    return this -> shape.getPosition().y - shape.getSize().y / 2.f;
+}
+
+float Palette :: bottom(){
+    return this -> shape.getPosition().y + shape.getSize().y / 2.f;
 }
