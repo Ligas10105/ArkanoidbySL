@@ -83,3 +83,6 @@
 40445	41878	7018825700963514	_deps/sfml-build/lib/sfml-graphics-d-2.dll	a4333eab1d3ee5eb
 40445	41878	7018825700963514	_deps/sfml-build/lib/libsfml-graphics-d.a	a4333eab1d3ee5eb
 41879	48472	7018825763877257	ArkanoidbySL.exe	f2c41f2fe0ffa12c
+6	1005	7018837836822397	CMakeFiles/ArkanoidbySL.dir/Ball.cpp.obj	bf46886af5227711
+59	1387	7018837840639149	CMakeFiles/ArkanoidbySL.dir/main.cpp.obj	f3b5a1352fbea7f8
+1387	2468	7018837848353304	ArkanoidbySL.exe	f2c41f2fe0ffa12c

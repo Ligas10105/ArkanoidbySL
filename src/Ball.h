@@ -23,8 +23,8 @@ public:
 
 private:
     CircleShape shape;
-    const float ballRadius{10.0f};
-    const float ballVelocity{3.0f};
+    const float ballRadius{20.0f};
+    const float ballVelocity{7.0f};
     Vector2f velocity { ballVelocity, ballVelocity};
     void draw(RenderTarget& target, RenderStates state) const override;
 };
