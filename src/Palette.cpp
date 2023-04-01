@@ -47,3 +47,7 @@ float Palette::top() {
 float Palette::bottom() {
     return this->shape.getPosition().y + shape.getSize().y / 2.f;
 }
+
+Vector2f Palette ::getPosition() {
+    return shape.getPosition();
+}

@@ -20,6 +20,8 @@ public:
     float top();
     float bottom();
 
+    Vector2f getPosition();
+
 private:
     void draw(RenderTarget& target, RenderStates state) const override;
     RectangleShape shape;

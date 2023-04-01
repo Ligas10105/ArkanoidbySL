@@ -16,18 +16,18 @@ void Ball::draw (RenderTarget& target, RenderStates state) const{
 }
 
 void Ball :: update(){
-    shape.move(this -> velocity);
-    if (this -> left() < 0)
+    shape.move(velocity);
+    if (left() < 0)
     {
         velocity.x = ballVelocity;
     }
-    else if (this -> right() > 800){
+    else if (right() > 800){
         velocity.x = -ballVelocity;
     }
-    else if (this -> top() < 0){
+    else if (top() < 0){
         velocity.y = ballVelocity;
     }
-    else if (this -> bottom() > 600){
+    else if (bottom() > 600){
         velocity.y = -ballVelocity;
     }
 
@@ -47,4 +47,24 @@ float Ball :: top(){
 
 float Ball :: bottom(){
     return this -> shape.getPosition().y + shape.getRadius();
+}
+
+void Ball :: moveDown(){
+    this -> velocity.y = -ballVelocity;
+}
+
+void Ball :: moveUp() {
+    this -> velocity.y = ballVelocity;
+}
+
+void Ball ::moveRight() {
+    this -> velocity.x = ballVelocity;
+}
+
+void Ball ::moveLeft() {
+    this -> velocity.x = -ballVelocity;
+}
+
+Vector2f Ball ::getPosition() {
+    return shape.getPosition();
 }
