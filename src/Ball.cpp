@@ -4,14 +4,15 @@
 
 #include "Ball.h"
 
+
 Ball :: Ball(float t_X, float t_Y) {
     shape.setPosition(t_X, t_X);
     shape.setRadius( this -> ballRadius);
-    shape.setFillColor(Color :: Red);
+    shape.setFillColor(sf::Color :: Red);
     shape.setOrigin(this -> ballRadius, this -> ballRadius);
 }
 
-void Ball::draw (RenderTarget& target, RenderStates state) const{
+void Ball::draw (sf::RenderTarget& target, sf::RenderStates state) const{
     target.draw(this -> shape, state);
 }
 
@@ -65,6 +66,6 @@ void Ball ::moveLeft() {
     this -> velocity.x = -ballVelocity;
 }
 
-Vector2f Ball ::getPosition() {
+sf::Vector2f Ball ::getPosition() {
     return shape.getPosition();
 }

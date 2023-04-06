@@ -4,11 +4,10 @@
 
 #include <SFML/Graphics.hpp>
 
-using namespace sf;
-using namespace std;
 
 
-class Ball : public Drawable {
+
+class Ball : public sf::Drawable {
 public:
     Ball(float t_X, float t_Y);
     Ball() = delete;
@@ -21,7 +20,7 @@ public:
     void moveRight();
     void moveLeft();
 
-    Vector2f getPosition();
+    sf::Vector2f getPosition();
 
     float left();
     float right();
@@ -29,11 +28,11 @@ public:
     float bottom();
 
 private:
-    CircleShape shape;
+    sf::CircleShape shape;
     const float ballRadius{20.0f};
     const float ballVelocity{7.0f};
-    Vector2f velocity { ballVelocity, ballVelocity};
-    void draw(RenderTarget& target, RenderStates state) const override;
+    sf::Vector2f velocity { ballVelocity, ballVelocity};
+    void draw(sf::RenderTarget& target, sf::RenderStates state) const override;
 };
 
 

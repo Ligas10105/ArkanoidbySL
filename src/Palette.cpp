@@ -8,13 +8,13 @@ Palette::Palette(float t_X, float t_Y) {
 
     shape.setPosition(t_X, t_Y);
     shape.setSize({paletteWidth, paletteHeight});
-    shape.setFillColor(Color::Red);
+    shape.setFillColor(sf::Color::Red);
     shape.setOrigin(this->paletteWidth / 2, this->paletteHeight / 2);
 
 
 }
 
-void Palette::draw(RenderTarget &target, RenderStates state) const {
+void Palette::draw(sf::RenderTarget &target, sf::RenderStates state) const {
     target.draw(this->shape, state);
 }
 
@@ -22,9 +22,9 @@ void Palette::update() {
 
 
     this->shape.move(velocity);
-    if (Keyboard::isKeyPressed(Keyboard::Key::Left) && this->left() > 0) {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left) && this->left() > 0) {
         velocity.x = -paletteVelocity;
-    } else if (Keyboard::isKeyPressed(Keyboard::Key::Right) && this->right() < 800) {
+    } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right) && this->right() < 800) {
         velocity.x = paletteVelocity;
     } else {
         velocity.x = 0;
@@ -48,6 +48,6 @@ float Palette::bottom() {
     return this->shape.getPosition().y + shape.getSize().y / 2.f;
 }
 
-Vector2f Palette ::getPosition() {
+sf::Vector2f Palette ::getPosition() {
     return shape.getPosition();
 }

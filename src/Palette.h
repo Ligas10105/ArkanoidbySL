@@ -3,12 +3,11 @@
 //
 
 #include <SFML/Graphics.hpp>
-using namespace sf;
-using namespace std;
 
 
 
-class Palette : public :: Drawable {
+
+class Palette : public sf::Drawable {
 public:
     Palette(float t_X, float t_Y);
     Palette() = delete;
@@ -20,15 +19,15 @@ public:
     float top();
     float bottom();
 
-    Vector2f getPosition();
+    sf::Vector2f getPosition();
 
 private:
-    void draw(RenderTarget& target, RenderStates state) const override;
-    RectangleShape shape;
+    void draw(sf::RenderTarget& target, sf::RenderStates state) const override;
+    sf::RectangleShape shape;
     const float paletteWidth {100.0f};
     const float paletteHeight {30.0f};
     const float paletteVelocity {5.0f};
-    Vector2f velocity {paletteVelocity, 0.f};
+    sf::Vector2f velocity {paletteVelocity, 0.f};
 
 
 

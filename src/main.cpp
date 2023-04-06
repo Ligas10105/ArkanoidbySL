@@ -6,8 +6,7 @@
 #include "Block.h"
 
 
-using namespace std;
-using namespace sf;
+
 
 template<class T1, class T2>
 bool isintersecting(T1 &a, T2 &b) {
@@ -51,12 +50,12 @@ bool collisionTest(Block &block, Ball &ball) {
 int main() {
     Ball ball(400, 300);
     Palette palette(400, 550);
-    RenderWindow window{VideoMode(800, 600), "ArkanoidbySL"};
+    sf::RenderWindow window{sf::VideoMode(800, 600), "ArkanoidbySL"};
     window.setFramerateLimit(60);
-    Event event;
+   sf::Event event;
     unsigned blocksX{10}, blocksY{4}, blockWidth{60}, blockHeight{20};
 
-    vector<Block> blocks;
+    std::vector<Block> blocks;
 
     for (int i = 0; i < blocksY; i++) {
         for (int j = 0; j < blocksX; j++) {
@@ -64,10 +63,10 @@ int main() {
         }
     }
     while (true) {
-        window.clear(Color::Black);
+        window.clear(sf::Color::Black);
         window.pollEvent(event);
 
-        if (event.type == Event::Closed) {
+        if (event.type == sf::Event::Closed) {
             window.close();
             break;
         }
